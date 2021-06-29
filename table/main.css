@@ -75,7 +75,8 @@ body{
       float: right;
   }
   .hero-text-box {
-    padding-top: 100px;
+    /* vertical-align: middle; */
+    padding-top: 100px; 
     margin-left: 70px;
     color: #fff;
     float: left;
@@ -92,8 +93,8 @@ body{
     margin-top: 0;
     margin-bottom: 20px;
     color: #fff;
-    font-size: 55px;
-    word-spacing: 4px;
+    font-size: 50px;
+    word-spacing: 2px;
     font-weight: revert;
   }
   header h3 {
@@ -102,8 +103,7 @@ body{
   h1,
   h2,
   h3 {
-    margin: 1%;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
   }
   
 
@@ -130,7 +130,7 @@ body{
   }
 
 p{
-    margin-bottom: 31px;
+    
     color: #a5a7c5;
     font-size: 18px;
     line-height: 1.6;
@@ -268,7 +268,7 @@ table {
  }
 
 .table{
-  margin: 0px 100px;
+  margin: 0px 70px;
   padding-bottom: 50px;
 }
  td{
@@ -291,7 +291,7 @@ table {
  }
  
  td, th {
-  padding: 26px;
+  padding: 17px;
   text-align: center;
   /* border: 1px solid rgba(7, 7, 7, 0.753); */
   box-shadow: 1px 1px 20px rgb(0 0 0 / 50%); 
@@ -306,11 +306,10 @@ table {
  .btn-order{
   text-decoration: none;
   margin: 1%;
-  padding: 5px;
-  font-size: 15px;
+  font-size: 13px;
   border-radius: 30px;
   font-weight: bolder;
-  padding: 10px 25px;
+  padding: 8px 5px;
   letter-spacing: 1px;
 }
 .btn-order:link,
@@ -332,23 +331,24 @@ table {
   width: 100%;
   height: 100%;
   display: grid;
-  grid-gap: 50px 50px;
+  grid-gap: 20px;
   grid-template-columns: auto auto;
   margin-bottom: 0px;
 }
 .grid-offer img{
   /* width: 120%;
   height: 80%; */
-  margin-top: 80px;
+  padding-top: 120px;
   float: right;
+  padding-right: 20px;
   margin-bottom: 0;
   padding-bottom: 0;
 }
 
 .text-box{
-  margin: 50px;
-  padding-top: 80px;
-  padding-left: 50px;
+  margin: 30px;
+  padding-top: 120px; 
+  padding-left: 30px;
   margin-bottom: 0;
   padding-bottom: 0;
 }
@@ -360,6 +360,7 @@ table {
   letter-spacing: 2px;
   color: #745da8;
   font-weight: bold;
+  margin-bottom: 0;
 }
 
 
@@ -371,20 +372,20 @@ table {
   width: 100%;
   height: 100%;
   display: grid;
-  grid-gap: 50px 50px;
+  grid-gap: 30px 50px;
   grid-template-columns: auto auto;
   margin-bottom: 0px;
 }
 .grid-services img{
   margin-top: 50px;
-  margin-right: 80px;
+  margin-right: 50px;
   float: right;
 }
 
 .text-box-services{
   margin: 50px;
   padding-top: 50px;
-  padding-left: 50px;
+  padding-left: 40px;
   margin-bottom: 0;
   padding-bottom: 0;
 }
@@ -396,7 +397,7 @@ table {
 }
 .text-box-services p,ul{
   color: #1b0a1d;
-  font-size: 20px;
+  font-size: 18px;
   letter-spacing: 1px;
 }
 .upper{
@@ -412,12 +413,12 @@ table {
   margin-top: 80px;
   margin-right: 0px;
   float: left;
-  margin-left: 80px;
+  margin-left: 50px;
 }
 .text-box-services2{
   padding-top: 120px;
   padding-left: 0;
-  padding-right: 50px;
+  padding-right: 0px;
   margin: 0;
 }
 .text-box-services2 h1{
@@ -428,15 +429,14 @@ table {
 }
 .text-box-services2 p,ul{
   color: #fafafa;
-  font-size: 20px;
+  font-size: 18px;
   letter-spacing: 1px;
 }
 
 
 /* ----------------------------------MEDIA QUERY-------------------------------- */
 
-@media only screen and (max-width: 760px),
-(min-device-width: 768px) and (max-device-width: 1024px) {
+@media (max-width: 760px),(min-width: 760px) and (max-width: 1024px){
 
   /* ------------------NAV BAR------------- */
   nav{
@@ -465,16 +465,16 @@ table {
   
   }
   h1 {
-    font-size: 18px;
-    font-weight: 200;
+    font-size: 30px;
+    font-weight: bolder;
   }
   header h3 {
     font-size: 12px;
-    font-weight: 200;
+    font-weight: 500;
   }
 
   p{
-    font-size: 13px;
+    font-size: 20px;
   }
   .hero-text-box span{
     display: none;
@@ -513,11 +513,14 @@ table {
  .comment{
   margin: 30px 100px;
 }
+#comment{
+  font-size: 15px;
+}
 footer{
   padding: 0;
   padding-top: 10px;
 }
-/* ----------------------------PRICING PAGE------------------------- */
+/* ------------------------------------------------------PRICING PAGE TABLE---------------------------- */
 table, thead, tbody, th, td, tr {
   display: block;
   }
@@ -557,6 +560,9 @@ table, thead, tbody, th, td, tr {
 	td:nth-of-type(5):before { content: "Transfer"; }
 	td:nth-of-type(6):before { content: "Order"; }
 
+  .btn-order{
+    padding: 8px 15px;
+  }
 
 
   /* -------------OFFER SECTION---------------------------------- */
@@ -566,8 +572,8 @@ table, thead, tbody, th, td, tr {
   }
   .grid-offer img{
     margin-right: 0;
-    width: 430px;
-    height: 400px;
+    width: 450px;
+    height: 500px;
   }
   
   .text-box{
@@ -583,12 +589,24 @@ table, thead, tbody, th, td, tr {
     font-size: 15px;
     letter-spacing: 1px;
   }
+/* --------------SERVICE PAGE-------------- */
+  .text-box-services p,ul{
+    font-size: 15px;
+  }
+
+  .grid-container-services{
+    grid-gap: 20px;
+  }
+  .grid-services img{
+    margin-right: 20px;
+  }
+  .lower img{
+    margin-left: 20px;
+  }
+  .text-box-services2 p,ul{
+    font-size: 15px;
+  }
   
 }
 
-@media only screen and (min-width: 1024px){
-  .features h2{
-    margin-top: 0;
-    padding-top: 0;
-  }
-}
+ 
